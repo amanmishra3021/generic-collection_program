@@ -1,0 +1,40 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp4
+{
+    class getdata<Tkey, Tvalue>
+    {
+        public Tkey key { set; get; }
+        public Tvalue value { set; get; }
+    }
+
+        class Program
+    {
+
+        static void Main(string[] args)
+        {
+            Console.WriteLine("enetr your key ");
+            int a = int.Parse(Console.ReadLine());
+            Console.WriteLine("enetr your value ");
+            string p = (Console.ReadLine());
+            getdata<int, string> get = new getdata<int, string>();
+            get.key = a;
+            get.value =p;
+            Console.WriteLine(get.key + "  " + get.value);
+            Console.WriteLine("enetr your key ");
+            string m = (Console.ReadLine());
+            Console.WriteLine("enetr your value ");
+            string l = (Console.ReadLine());
+            getdata<string, string> get2 = new getdata<string, string>();
+            get2.key = m;
+            get2.value = l;
+            Console.WriteLine(get2.key + "  " + get2.value);
+            Console.ReadLine();
+           
+        }
+    }
+}
